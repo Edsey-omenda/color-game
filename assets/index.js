@@ -49,6 +49,8 @@ function random(r) {
 
 function setNumberOfTiles(e) {
   // your code here
+  var s6btn = document.querySelector("#diff__btn");
+var n9btn = document.querySelector("#diff__btn active");
 }
 
 function createBlocks(num) {
@@ -65,3 +67,16 @@ function createBlocks(num) {
     colorsBlocks[i].addEventListener("click", checkColors);
   }
 }
+
+n9btn.addEventListener("click", function(){
+  s6btn.classList.remove("selected");
+  n9btn.classList.add("selected");
+  blocks = 9;
+  colors = randomColor(blocks);
+  pickedColor = pickColors();
+  rgbCode.textContent = pickedColor;
+  for(var i = 0; i < blocks.length; i++) {
+      blocks[i].style.background = colors[i];
+      blocks[i].style.display = "block";
+  }
+});
