@@ -6,11 +6,13 @@ var colorsBlocks;
 var rgbEl = document.querySelector(".rgb");
 var statusEl = document.querySelector(".status");
 var colors = [];
+var blocks = 9;
 createBlocks(n);
 resetGame();
 
 function checkColors(e) {
   // your code here
+  
 }
 
 function resetGame() {
