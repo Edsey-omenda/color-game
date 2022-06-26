@@ -3,9 +3,11 @@ body {
   text-align: center;
   margin: 10px;
 }
+/* 
 .mainbody {
   /* display: flex; */
-}
+
+
 @media (min-width: 768px) {
   body {
     font-size: 20px;
@@ -19,8 +21,8 @@ h1 {
       w
   } */
 
-main {
-}
+/* main{
+} */
 
 .rgb {
   font-size: 1.4rem;
